@@ -4,7 +4,7 @@ import axiosInstance from "../libs/api.libs";
 
 const movieService = {
 
-     getall: async() => {
+     getAll: async() => {
         const movies = await axiosInstance.get<Movie[]>('/movies');
         return movies.data;
     },
