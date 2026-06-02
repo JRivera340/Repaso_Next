@@ -83,5 +83,7 @@ export default function EditarPeliculaPage(){
                 
             </form>
         </div>
+
+        
     )
 }
