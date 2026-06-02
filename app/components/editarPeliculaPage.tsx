@@ -36,7 +36,7 @@ export default function EditarPeliculaPage(){
         setError('')
 
         if (!id || !movie) {
-            setError('Pelicula no existe')
+            setError('Campos vacios')
             return
         } 
         setLoading(true)

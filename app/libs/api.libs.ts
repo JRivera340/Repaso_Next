@@ -8,6 +8,8 @@ const axiosInstance = axios.create({
     }
 });
 
+/**Login guarda el token en localStorage  ← esto lo hace el store de Zustand
+Interceptor lee el token de localStorage y lo agrega al header de cada request */
 axiosInstance.interceptors.request.use(
     (config) => {
         if(globalThis.window !== undefined){

@@ -35,7 +35,7 @@ export default function Login(){
         e.preventDefault();
         setError('')
         
-        //condicion para validar el backend
+        //Se valida en el front que los espacios no esten vacios
         if (!email || !password) {
             setError('Email y password obligatorias');
             return

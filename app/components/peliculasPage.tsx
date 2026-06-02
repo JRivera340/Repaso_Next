@@ -14,6 +14,8 @@ export default function PeliculasPage(){
     // 2. efectos y lógica
     useEffect(() => {
         movieService.getAll().then(data => setMovies(data))
+        // ← [] = ejecutar solo al montar, nunca más
+        // ← Si pusiera una variable adentro: se ejecuta cada vez que cambia el id
     }, [])
 
 

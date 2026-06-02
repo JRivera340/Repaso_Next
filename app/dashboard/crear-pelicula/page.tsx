@@ -1,10 +1,10 @@
 import { Suspense } from 'react'
-import EditarPeliculaPage from "@/app/components/editarPeliculaPage"
+import CrearPeliculaPage from "@/app/components/crearPeliculaPage"
 
 export default function EditarPelicula() {
   return (
     <Suspense fallback={<div>Cargando...</div>}>
-      <EditarPeliculaPage />
+      <CrearPeliculaPage />
     </Suspense>
   )
 }
