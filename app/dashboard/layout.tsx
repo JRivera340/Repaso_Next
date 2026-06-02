@@ -14,11 +14,11 @@ export default function DashboardLayout({ children }: Readonly<{children : React
     const router = useRouter()
 
     useEffect(() => {
-        // si no está autenticado, redirige al login
-        if (!isAuthenticated) {
-            router.push('/login')
-        }
-    }, [isAuthenticated])
+    const token = localStorage.getItem("authToken")
+    if (!token) {
+        router.push('/login')
+    }
+}, [])
 
     return(
 

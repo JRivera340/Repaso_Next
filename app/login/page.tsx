@@ -3,7 +3,7 @@
 import { useState } from "react";
 //se debe importar el useAuthStore que creamo
 import { useAuthStore } from "../_store/auth.store";
-//se debe importar el navigation para el flujo de rutas
+//se debe importar el navigation para el flujo de rutas 
 import {useRouter} from "next/navigation";
 import authService from "../services/auth.service";
 

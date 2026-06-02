@@ -34,6 +34,7 @@ export default function Sidebar(){
                 <Link href={'/dashboard'} className="block py-2 hover:text-blue-400">Inico</Link>
                 <Link href={'/dashboard/peliculas'} className="block py-2 hover:text-blue-400">peliculas</Link>
                 <Link href={'/dashboard/counter'} className="block py-2 hover:text-blue-400">Contador</Link>
+                
             </div>
 
             <button onClick={logout} className="mt-auto bg-red-500 py-2 px-4 rounded w-full">Cerrar Sesion</button>

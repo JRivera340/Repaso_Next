@@ -22,17 +22,21 @@ export default function PeliculasPage(){
             <h1 className='text-2xl font-bold mb-4'>Peliculas en una tabla</h1>
             <table className='w-full border-collapse'>
                 <thead className='bg-gray-800 text-white'>
-                    <tr className='border-b border-gray-200'> {/**Filas */}
-                        <th className='-3 text-left'>Titulo</th>{/**Columnas */}
-                        <th className='-3 text-left'>Genero</th>
-                        <th className='-3 text-left'>Año</th>
-                        <th className='-3 text-left'>Acciones</th>
+                    {/**Filas <tr>*/}
+                    {/**Columnas <th> */}
+                    <tr className='border-b border-gray-200'> 
+                        <th className='p-3 text-left'>Titulo</th>
+                        <th className='p-3 text-left'>Genero</th>
+                        <th className='p-3 text-left'>Año</th>
+                        <th className='p-3 text-left'>Acciones</th>
                     </tr>     
                 </thead>
                 <tbody>
+                    {/**revisar siempre el json para saber como se comportan los datos a la hora de traerlos */}
+                        
                     {movies.map((movie => (
+                        
                     <tr className='border-b border-gray-200' key={movie.id}>
-                        {/**revisar siempre el json para saber como se comportan los datos a la hora de traerlos */}
                         <td className='p-3'>{movie.title}</td>
                         <td className='p-3'>{movie.genre}</td>
                         <td className='p-3'>{movie.year}</td>
